@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col-sm-3" sidebar-bg>
 		  		<ul>
-		  			<li>		  			
+		  			<li>	  			
 		  				<a href="/mall/index.jsp">홈으로</a>
 		  			</li>
 		  			<li>	
@@ -36,58 +36,39 @@
 		  				<a href="/mall/member/loginForm.jsp">로그인</a>
 		  			</li>
 		  			<li>	
-		  				<i class="fas fa-thumbs-up"></i>
 		  				<a href="/mall/item/additemForm.jsp">상품등록</a>
 		  			</li>
 		  			<li>	
+		  				<i class="fas fa-thumbs-up"></i>
 		  				<a href="/mall/board/addboardForm.jsp">게시글등록</a>
 		  			</li>
 		  		</ul>
 			</div>
 			<div class="col-sm-9">
+				<div>
 				<br>
-				<h1>상품등록 폼</h1>
-				<hr>
-					<form role="form" method="post" autocomplete="off">
-						<div class="inputArea"> 
-						 <label>1차 분류</label>
-						 <select class="category1">
-						  <option value="">전체</option>
-						 </select>
-						
-						 <label>2차 분류</label>
-						 <select class="category2" name="cateCode">
-						  <option value="">전체</option>
-						 </select>
-						</div>
-						
-						<div class="inputArea">
-						 <label for="gdsName">상품명</label>
-						 <input type="text" id="gdsName" name="gdsName" />
-						</div>
-						
-						<div class="inputArea">
-						 <label for="gdsPrice">상품가격</label>
-						 <input type="text" id="gdsPrice" name="gdsPrice" />
-						</div>
-						
-						<div class="inputArea">
-						 <label for="gdsStock">상품수량</label>
-						 <input type="text" id="gdsStock" name="gdsStock" />
-						</div>
-						
-						<div class="inputArea">
-						 <label for="gdsDes">상품소개</label>
-						 <textarea rows="5" cols="50" id="gdsDes" name="gdsDes"></textarea>
-						</div>
-						
-						<div class="inputArea">
-						 <button type="submit" id="register_Btn" class="btn btn-primary">등록</button>
-						</div>					
-					</form>
+ 					<h1>게시글 등록</h1> 
+					<hr>
+					<div class="container">
+					    <form action="/insertProc" method="post">
+					      <div class="form-group">
+					        <label for="subject">제목</label>
+					        <input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요.">
+					      </div>
+					      <div class="form-group">
+					        <label for="writer">작성자</label>
+					        <input type="text" class="form-control" id="writer" name="writer" placeholder="내용을 입력하세요.">
+					      </div>
+					      <div class="form-group">
+					        <label for=content">내용</label>
+					        <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+					      </div>
+					      <button type="submit" class="btn btn-primary">작성</button>
+					    </form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>

@@ -26,8 +26,7 @@
 		<div class="row">
 			<div class="col-sm-3" sidebar-bg>
 		  		<ul>
-		  			<li>
-		  			
+		  			<li>		  			
 		  				<i class="fas fa-thumbs-up"></i>
 		  				<a href="/mall/index.jsp">È¨À¸·Î</a>
 		  			</li>
