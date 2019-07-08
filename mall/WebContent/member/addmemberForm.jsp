@@ -26,12 +26,21 @@
 		<div class="row">
 			<div class="col-sm-3" sidebar-bg>
 		  		<ul>
-		  			<li>
+		  			<li>		  				
 		  				<a href="/mall/index.jsp">홈으로</a>
 		  			</li>
-		  			<li>	
-		  				<i class="fas fa-thumbs-up"></i>
+		  			<li>
+		  				<i class="fas fa-thumbs-up"></i>	
 		  				<a href="/mall/member/addmemberForm.jsp">회원가입</a>
+		  			</li>
+		  			<li>	
+		  				<a href="/mall/member/loginForm.jsp">로그인</a>
+		  			</li>
+		  			<li>	
+		  				<a href="/mall/item/additemForm.jsp">상품등록</a>
+		  			</li>
+		  			<li>	
+		  				<a href="/mall/board/addboardForm.jsp">게시글등록</a>
 		  			</li>
 		  		</ul>
 			</div>
