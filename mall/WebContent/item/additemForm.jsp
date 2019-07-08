@@ -7,8 +7,6 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
 <style>
 	.sidebar-bg {
 		background: gray;
@@ -29,13 +27,14 @@
 			<div class="col-sm-3" sidebar-bg>
 		  		<ul>
 		  			<li>
+		  			
+		  				<i class="fas fa-thumbs-up"></i>
 		  				<a href="/mall/index.jsp">홈으로</a>
 		  			</li>
 		  			<li>	
 		  				<a href="/mall/member/addmemberForm.jsp">회원가입</a>
 		  			</li>
 		  			<li>	
-		  				<i class="fas fa-thumbs-up"></i>
 		  				<a href="/mall/member/loginForm.jsp">로그인</a>
 		  			</li>
 		  			<li>	
@@ -47,31 +46,46 @@
 		  		</ul>
 			</div>
 			<div class="col-sm-9">
-				<div>
-					<br>
- 					<h1>LOGIN</h1>  
- 					<hr>
- 						<div class="login-box well">
-	 						<form accept-charset="UTF-8" role="form" method="post" action="">
-	                            <legend>로그인</legend>
-	                            <div class="input-group">
-	                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-	                                <input type="text" id="userid" value='' placeholder="E-mail을 입력하세요" class="form-control" />
-	                            </div>
-	                            <div class="input-group">
-	                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-	                                <input type="password" id="password" value='' placeholder="비밀번호를 입력하세요" class="form-control" />
-	                            </div>
-	                           <div>
-									<button type="submit" class="btn btn-primary"/>로그인</button> 
-	                            	<span class='text-center'><a href="#" class="text-sm">비밀번호 찾기</a></span>
-	                            </div>
-	                            <div class="form-group">
-	                                <a href="/mall/member/addmemberForm.jsp" class="btn btn-primary"> 회원가입</a>
-	                            </div>
-	                        </form>
-	                    </div> 
-				</div>
+				<br>
+				<h1>상품등록 폼</h1>
+				<hr>
+					<form role="form" method="post" autocomplete="off">
+						<div class="inputArea"> 
+						 <label>1차 분류</label>
+						 <select class="category1">
+						  <option value="">전체</option>
+						 </select>
+						
+						 <label>2차 분류</label>
+						 <select class="category2" name="cateCode">
+						  <option value="">전체</option>
+						 </select>
+						</div>
+						
+						<div class="inputArea">
+						 <label for="gdsName">상품명</label>
+						 <input type="text" id="gdsName" name="gdsName" />
+						</div>
+						
+						<div class="inputArea">
+						 <label for="gdsPrice">상품가격</label>
+						 <input type="text" id="gdsPrice" name="gdsPrice" />
+						</div>
+						
+						<div class="inputArea">
+						 <label for="gdsStock">상품수량</label>
+						 <input type="text" id="gdsStock" name="gdsStock" />
+						</div>
+						
+						<div class="inputArea">
+						 <label for="gdsDes">상품소개</label>
+						 <textarea rows="5" cols="50" id="gdsDes" name="gdsDes"></textarea>
+						</div>
+						
+						<div class="inputArea">
+						 <button type="submit" id="register_Btn" class="btn btn-primary">등록</button>
+						</div>					
+					</form>
 			</div>
 		</div>
 	</div>

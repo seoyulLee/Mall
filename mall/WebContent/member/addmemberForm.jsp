@@ -45,8 +45,10 @@
 		  		</ul>
 			</div>
 			<div class="col-sm-9">
+				<br>
 				<div>
  					<h1>회원가입 폼</h1>  
+ 					<hr>
  					<form role="form">
 		                    <div class="form-group">
 		                        <label for="inputName">성명</label>
